@@ -187,7 +187,6 @@ p {
 }
 
 /*  Section: Who We Are*/
-
 #who{
   display: flex;
 }
@@ -198,4 +197,15 @@ p {
 
 #who .who-img{
   background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+/* Clients */
+#clients .items{
+  display: flex;
+}
+
+#clients .items img{
+  display: block;
+  margin: auto;
+  width: 60%;
 }
