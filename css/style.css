@@ -19,22 +19,51 @@ p {
 }
 
 /* Utility Classes */
+.container {
+  max-width: 1800px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .text-primary {
   color: #93cb52;
 }
 
-.l-heading{
+.l-heading {
   font-size: 4rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
 
-.lead{
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
-.btn{
+.btn {
   display: inline-block;
   color: #fff;
   background-color: #93cb52;
@@ -43,7 +72,7 @@ p {
   border-radius: 5px;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #7ab436;
 }
 
@@ -83,24 +112,45 @@ p {
 
 /* Showcase */
 
-#showcase{
+#showcase {
   background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
   height: 100vh;
   color: #fff;
 }
 
-#showcase .showcase-content{
+#showcase .showcase-content {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 100%;
   padding: 0 2rem;
   /* Overlay */
   position: absolute;
   top: 70px;
   left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.6);
+}
+
+/*  Section: What We Do*/
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item svg {
+  background: #93cb52;
+  font-size: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
